@@ -1,0 +1,368 @@
+body {
+    background-image: url("../images/bannerLogin.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    background-color: rgb(33, 41, 66);
+    border-radius: 9px;
+    border-top: 10px solid #79a6fe;
+    border-bottom: 10px solid #8BD17C;
+    width: 360px;
+    height: 500px;
+    box-shadow: 1px 1px 108.8px 19.2px rgb(25, 31, 53);
+    opacity: 85%;
+}
+
+.con {
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 17px;
+    color: rgb(243, 188, 111);
+}
+
+/* nút */
+#login {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    background-color: rgb(243, 188, 111);
+    font-size: 17px;
+}
+#login:hover{
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 3px #79a6fe;
+    transition: 0.5s;
+    background-color: #8BD17C;
+}
+
+/* tài khoản mật khẩu */
+#name {
+    line-height: 40px;
+    border: 2px solid transparent;
+    border-bottom-color: rgb(243, 188, 111);
+    padding: .2rem 0;
+    outline: none;
+    width: 280px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    -webkit-transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #29558b;
+}
+
+#name::-webkit-input-placeholder {
+    color: #e4c748;
+}
+
+#name::-moz-placeholder {
+    color: #e4c748;
+}
+
+#name:-ms-input-placeholder {
+    color: #e4c748;
+}
+
+#name::-ms-input-placeholder {
+    color: #e4c748;
+}
+
+#name::placeholder {
+    color: #e4c748;
+}
+
+#name:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#name:focus::-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#name:focus:-ms-input-placeholder {
+    opacity: 0;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#name:focus::-ms-input-placeholder {
+    opacity: 0;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#name:focus::placeholder {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#pass {
+    line-height: 40px;
+    border: 2px solid transparent;
+    border-bottom-color: rgb(243, 188, 111);
+    padding: .2rem 0;
+    margin-top: 20px;
+    width: 280px;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    -webkit-transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #29558b;
+}
+
+#pass::-webkit-input-placeholder {
+    color: #e4c748;
+}
+
+#pass::-moz-placeholder {
+    color: #e4c748;
+}
+
+#pass:-ms-input-placeholder {
+    color: #e4c748;
+}
+
+#pass::-ms-input-placeholder {
+    color: #e4c748;
+}
+
+#pass::placeholder {
+    color: #e4c748;
+}
+
+#pass:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#pass:focus::-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#pass:focus:-ms-input-placeholder {
+    opacity: 0;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#pass:focus::-ms-input-placeholder {
+    opacity: 0;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#pass:focus::placeholder {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+#eye {
+    color: #333;
+    margin-left: -35px;
+    padding: 15px 9px 19px 0px;
+    cursor: pointer;
+}
+
+/* đăng nhập MXH */
+.wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    margin-left: -40px;
+    margin-top: -10px;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+}
+
+.dntfor {
+    color: rgb(243, 188, 111);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.dntfor:hover {
+    text-decoration: underline;
+}
+
+.dnthave {
+    color: rgb(243, 188, 111);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.dnthave:hover {
+    text-decoration: underline;
+}
+
+h6 {
+    margin-top: -0px;
+}
+
+/* nhớ mật khẩu */
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.check {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.checkmark {
+    position: relative;
+    box-shadow: rgb(243, 188, 111) 0px 0px 0px 2px;
+    background-color: none;
+    height: 15px;
+    width: 15px;
+    flex-shrink: 0;
+    margin-top: -1px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    transform-origin: 0px 10px;
+    border-radius: 4px;
+    margin: -1px 10px 0px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.check input:checked~.checkmark {
+    box-shadow: rgb(243, 188, 111) 0px 0px 0px 2px;
+    background-color: #79a6fe;
+    height: 15px;
+    width: 15px;
+    flex-shrink: 0;
+    margin-top: -1px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    transform-origin: 0px 10px;
+    border-radius: 4px;
+    margin: -1px 10px 0px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked~.checkmark:after {
+    display: block;
+}
+
+.check .checkmark:after {
+    left: 0.25em;
+    top: 0.10em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid black;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+    transition: all 500ms ease-in-out;
+}
+
+h5 {
+    margin-top: -0px;
+    color: rgb(243, 188, 111);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="accest/fontawesome-free-6.2.1-web/css/all.min.css">
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h3 class="con">ĐĂNG NHẬP</h3>
+            <div class="text">
+                <input placeholder="Email" type="email" id="name">
+            </div>
+            <div class="pas">
+                <input placeholder="Mật khẩu" type="password" id="pass">
+                <span>
+                    <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+                 </span>
+            </div>
+            <label class="check">
+                <input checked="checked" type="checkbox">
+                <div class="checkmark"></div>
+                <h5>Nhớ mật khẩu!</h5>
+                <a href="forgotpassword.html" class="dntfor"><h5>Quên mật khẩu!</h5></a>
+            </label>
+            
+            <div class="but">
+                <input type="button" id="login" value="Đăng nhập" onclick="validate()"></input>
+            </div>
+            <p>------------------- or -------------------</p>
+            <div class="or">
+                <ul class="wrapper">
+                    <li class="icon facebook">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                    </li>
+                    <li class="icon twitter">
+                        <span><i class="fab fa-twitter"></i></span>
+                    </li>
+                    <li class="icon instagram">
+                        <span><i class="fab fa-instagram"></i></span>
+                    </li>
+                </ul>
+            </div>
+            <a href="createAccount.html" class="dnthave"><h6>Chưa có tài khoản?Tạo mới</h6></a>
+        </form>
+    </div>
+</body>
+<script src="js/login.js"></script>
+<script src="js/loginin.js"></script>
+</html>
